@@ -1,0 +1,79 @@
+// Custom Bootstrap Build
+@import 'bootstrap/bootstrap';
+@webkit: true;
+@w3c: true;
+@moz: true;
+@opera: true;
+@ms: true;
+@oldWebkit: true;
+@import '../bower_components/lesshat/build/lesshat';
+
+* {
+  box-sizing: border-box;
+}
+
+@import 'header';
+
+.content {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.necessity {
+  margin-bottom: 40px;
+}
+
+.tools {
+  margin-top: 120px;
+}
+
+.giants {
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  overflow-x: scroll;
+  height: 192px;
+  padding: 20px 0;
+  max-width: 100%;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+  background-color: fade(#f8f8f8,96%);
+  .wrapper {
+    width: 1380px;
+    height: 100%;
+    margin: 0 auto;
+    > a {
+      display: block;
+      float: left;
+      margin-right: 20px;
+      &:first-child {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.gray {
+  color: darkgray;
+}
+
+.space {
+  margin-top: 80px;
+}
+
+@import "devices";
+
+footer {
+  bottom: 0;
+  min-height: 44px;
+  margin-top: 60px;
+  padding: 10px 0;
+  background-color: fade(#f8f8f8,96%);
+  border-top: 1px solid #c0c0c0;
+  p {
+    line-height: 24px;
+    margin: 0;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+

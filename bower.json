@@ -1,0 +1,10 @@
+{
+  "name": "bradypodion.io",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.2",
+    "lesshat": "~2.0.6"
+  },
+  "devDependencies": {}
+}

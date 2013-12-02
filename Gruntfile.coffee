@@ -100,6 +100,16 @@ module.exports = (grunt) ->
       html: ['<%= bp.dist %>/**/*.html']
       css: ['<%= bp.dist %>/styles/**/*.css']
 
+    cdn:
+      options:
+        cdn: 'http://dlmgmzafnqpmu.cloudfront.net/'
+      dist:
+        src: [
+          '<%= bp.dist %>/index.html'
+          '<%= bp.dist %>/styles/**/*.css'
+        ]
+        dest: '<%= bp.dist %>'
+
     cssmin:
       # Defining this task manually b/c either usemin or I am very stupid
       dist:
@@ -161,10 +171,16 @@ module.exports = (grunt) ->
         ]
 
     concurrent:
-      dist: ['less', 'imagemin', 'svgmin', 'htmlmin']
+      dist: [
+        'less'
+        # 'imagemin'
+        # 'svgmin'
+        'htmlmin'
+      ]
 
   grunt.registerTask 'serve', (target) ->
     if target is 'dist'
+      # assets have to be on the cdn for this to work obv
       return grunt.task.run ['build', 'connect:dist:keepalive']
 
     grunt.task.run [
@@ -186,6 +202,7 @@ module.exports = (grunt) ->
     'copy:dist'
     'rev'
     'usemin'
+    'cdn'
   ]
 
   grunt.registerTask 'default', ['build']

@@ -21,7 +21,8 @@
     "grunt-svgmin": "~0.2.0",
     "grunt-concurrent": "~0.3.0",
     "load-grunt-tasks": "~0.1.0",
-    "time-grunt": "~0.1.1"
+    "time-grunt": "~0.1.1",
+    "grunt-cdn": "git://github.com/RadiusIntelligence/grunt-cdn.git"
   },
   "engines": {
     "node": ">=0.10.0"

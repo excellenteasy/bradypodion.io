@@ -1,4 +1,4 @@
-(function(){
+$(function(){
   $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
           || location.hostname == this.hostname) {
@@ -13,9 +13,16 @@
           }
       }
   });
+
   $('#onthelist').click(function(){
     setTimeout(function(){
       $('#mce-EMAIL').focus();
     },1000);
   });
-}).call(this);
+
+  $('.videowrapper iframe').each(function(i,iframe){
+    $iframe = $(iframe);
+    src = $iframe.attr('data-src');
+    $iframe.attr('src',src);
+  });
+});

@@ -1,6 +1,7 @@
 .keyframes(~'rotateHue, from { filter: hue-rotate(0deg) saturate(1); } to { filter: hue-rotate(360deg) saturate(1); }');
 
 header {
+  background-color: darkgray;
   color: white !important;
   position: relative;
   height: 300px;
@@ -19,17 +20,43 @@ header {
   h2 {
     margin-top: 0;
   }
-  .btn {
-    margin-top: 60px;
+  form {
+    margin-top: 30px;
     margin-bottom: 20px;
+    input {
+      margin-top: 10px;
+    }
   }
+
+  // Bootstrap prefers the placeholder pink oO
+  // TODO: find weird bug and remove code below
+  .form-control {
+    @color: #999;
+    &:-moz-placeholder            {
+      text-align: center;
+      color: @color !important;
+    }
+    &::-moz-placeholder           {
+      text-align: center;
+      color: @color !important;
+    }
+    &:-ms-input-placeholder       {
+      text-align: center;
+      color: @color !important;
+    }
+    &::-webkit-input-placeholder  {
+      text-align: center;
+      color: @color !important;
+    }
+  }
+
   a {
     color: white !important;
   }
   @media (min-width: @screen-sm-min) {
     height: 480px;
-    .btn {
-      margin-top: 240px;
+    form {
+      margin-top: 200px;
     }
   }
   @media (min-width: @screen-md-min) {
@@ -43,14 +70,14 @@ header {
     h2 {
       font-size: 30px !important;
     }
-    .btn {
-      margin-top: 60px;
+    form {
+      margin-top: 40px;
       margin-bottom: 30px;
     }
   }
   @media (min-width: @screen-lg-min) {
     height: 480px;
-    .btn {
+    form {
       margin-top: 120px;
     }
   }

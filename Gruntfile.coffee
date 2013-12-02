@@ -154,7 +154,7 @@ module.exports = (grunt) ->
           cwd: '<%= bp.app %>'
           dest: '<%= bp.dist %>'
           src: [
-            '*.{ico,png,txt}'
+            '*.{ico,png,txt,xml}'
             'images/**/*.{webp,gif}'
             'styles/fonts/**/*.*'
           ]

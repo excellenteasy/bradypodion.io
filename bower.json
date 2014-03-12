@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "~2.0.3",
     "bootstrap": "~3.0.2",
-    "lesshat": "~2.0.6"
+    "lesshat": "~2.0.6",
+    "fontawesome": "~4.0.3"
   },
   "devDependencies": {}
 }

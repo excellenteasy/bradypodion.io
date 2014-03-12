@@ -1,5 +1,7 @@
 // Custom Bootstrap Build
 @import 'bootstrap/bootstrap';
+@import 'fontawesome/fontawesome';
+
 @webkit: true;
 @w3c: true;
 @moz: true;
@@ -38,7 +40,7 @@
   border-bottom: 1px solid #c0c0c0;
   background-color: fade(#f8f8f8,96%);
   .wrapper {
-    width: 1380px;
+    width: 1040px;
     height: 100%;
     margin: 0 auto;
     > a {
@@ -61,6 +63,35 @@
 }
 
 @import "devices";
+
+#emaillist {
+  margin-top: 80px;
+  .btn {
+    margin-top: 20px;
+  }
+}
+
+// Bootstrap prefers the placeholder pink oO
+// TODO: find weird bug and remove code below
+.form-control {
+  @color: #999;
+  &:-moz-placeholder            {
+    text-align: center;
+    color: @color !important;
+  }
+  &::-moz-placeholder           {
+    text-align: center;
+    color: @color !important;
+  }
+  &:-ms-input-placeholder       {
+    text-align: center;
+    color: @color !important;
+  }
+  &::-webkit-input-placeholder  {
+    text-align: center;
+    color: @color !important;
+  }
+}
 
 footer {
   bottom: 0;

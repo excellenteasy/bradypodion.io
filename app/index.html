@@ -26,43 +26,57 @@
     <meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png" />
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Bradypodion</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fa fa-bars"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://docs.bradypodion.io/">
+              <span class="fa fa-book"></span>
+              Documentation
+            </a></li>
+            <li><a href="https://github.com/excellenteasy/bradypodion/">
+              <span class="fa fa-github"></span>
+              GitHub
+            </a></li>
+            <li><a href="https://github.com/excellenteasy/bradypodion/issues">
+              <span class="fa fa-exclamation-circle"></span>
+              Issues
+            </a></li>
+            <li><a href="https://twitter.com/bradypodionjs">
+              <span class="fa fa-twitter"></span>
+              Twitter
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <header>
       <div id="banner"></div>
       <div class="container">
-        <h1 class="col-md-10 col-md-offset-1">BradyPodion.js</h1>
-        <h2 class="h4 col-md-10 col-md-offset-1">Create post-platform<sup><a href="#postplatform">1</a></sup> mobile apps with ease</h2>
-        <div class="row">
-          <form id="emaillist" class="form-group text-center col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1" role="form" action="http://excellenteasy.us2.list-manage.com/subscribe/post?u=e2e54081fdbe00d501e6f9642&amp;id=b80794a7cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
-            <label for="mce-EMAIL" class="sr-only">Email Address</label>
-            <input type="email" placeholder="Enter Email" name="EMAIL" class="form-control" id="mce-EMAIL">
-            <input type="submit" value="Get me on the list" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block btn-lg btn-primary">
-          </form>
-        </div>
+        <h1 class="col-md-10 col-md-offset-1">Bradypodion.js</h1>
+        <h2 class="lead col-md-10 col-md-offset-1">The next generation mobile web app framework</h2>
+        <!-- <div class="col-md-6 col-md-offset-3">
+          <div class="btn btn-lg btn-primary col-md-6">GitHub</div>
+          <div class="btn btn-lg btn-primary col-md-6">Documentation</div>
+        </div> -->
         <div class="col-md-4 col-md-offset-4">
-          <a href="https://twitter.com/share?url=http%3A%2F%2Fbradypodion.io&amp;via=bradypodionjs&amp;text=Create%20post-platform%20mobile%20apps%20with%20ease" class="twitter-share-button" data-dnt data-lang="en">Tweet</a>
-          <a href="https://twitter.com/bradypodionjs" class="twitter-follow-button" data-dnt data-show-count="false" data-lang="en">Follow @bradypodionjs</a>
+          <iframe src="http://ghbtns.com/github-btn.html?user=excellenteasy&repo=bradypodion&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+          <iframe src="http://ghbtns.com/github-btn.html?user=excellenteasy&repo=bradypodion&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
         </div>
       </div>
     </header>
     <div class="content container">
-      <div class="row">
+      <div id="postplatform" class="row">
         <h3 class="necessity h2 col-md-10 col-md-offset-1 text-center">
           Born out of necessity – tested in the field.
         </h3>
-        <div class="col-md-5 col-md-offset-1"  itemscope="itemscope" itemtype="http://schema.org/VideoObject">
-          <meta itemprop="embedURL" content="http://www.youtube.com/watch?v=70SqD05Zid4">
-          <div class="videowrapper">
-            <iframe data-src="//www.youtube.com/embed/70SqD05Zid4?vq=hd720" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-md-5"  itemscope="itemscope" itemtype="http://schema.org/VideoObject">
-          <meta itemprop="embedURL" content="http://www.youtube.com/watch?v=gcwOrN3RM2M">
-          <div class="videowrapper">
-            <iframe data-src="//www.youtube.com/embed/gcwOrN3RM2M?vq=hd720" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <div id="postplatform" class="row">
         <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
           <h4 class="h3">UX first</h4>
           <p>We want developers to use web technologies but we can't expect them to sacrifice a good part of their app’s user experience. That’s why we don’t take the smallest common denominator, but rather optimize for each platform until it matches native behavior. You can't ship iOS UI to Android, or waive accesibility. That's why we abstracted such things.</p>
@@ -98,14 +112,8 @@
         <a href="http://jquery.com" title="jquery homepage">
           <img src="/images/giants/jquery.png" alt="jquery's logo" width="150" height="150"/>
         </a>
-        <a href="http://lodash.com" title="lodash homepage">
-          <img src="/images/giants/lodash.png" alt="lodash's logo" width="150" height="150"/>
-        </a>
         <a href="http://gruntjs.com" title="grunt homepage">
           <img src="/images/giants/grunt.png" alt="grunt's logo" width="150" height="150"/>
-        </a>
-        <a href="http://npmjs.org" title="npm homepage">
-          <img src="/images/giants/npm.png" alt="npm's logo" width="150" height="150"/>
         </a>
         <a href="http://bower.io" title="bower homepage">
           <img src="/images/giants/bower.png" alt="bower's logo" width="150" height="150"/>
@@ -128,13 +136,16 @@
         <br>
         <a href="https://excellenteasy.com/blog/posts/how-the-web-empowered-us-to-ship-ios-7-ui-only-7-days-after-its-announcement/" title="How the web empowered us to ship iOS 7 UI only 7 days after its announcement">We shipped iOS 7 UI only 7 days after its announcement</a>
       </div>
-      <div class="col-md-8 col-md-offset-2 space">
-        <a id="onthelist" href="#emaillist" title="Bradypodion.js email list" class="col-md-4 col-md-offset-4 btn btn-primary btn-lg">
-          Get on our list
-        </a>
-      </div>
-      <p class="gray col-md-8 col-md-offset-2 space">
-        BradyPodion.js will be MIT licensed soon
+      <form id="emaillist" class="form-group text-center col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1" role="form" action="http://excellenteasy.us2.list-manage.com/subscribe/post?u=e2e54081fdbe00d501e6f9642&amp;id=b80794a7cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+        <label for="mce-EMAIL" class="sr-only">Email Address</label>
+        <input type="email" placeholder="Enter Email" name="EMAIL" class="form-control" id="mce-EMAIL">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block btn-lg btn-primary">
+      </form>
+      <p class="gray col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1 space">
+        Bradypodion is<br class="visible-xs">
+        <a href="https://github.com/excellenteasy/bradypodion/blob/master/LICENSE" title="License">MIT licensed</a>
+        and<br class="visible-xs">
+        <a href="https://github.com/excellenteasy/bradypodion/blob/master/CODE_OF_CONDUCT.md" title="Code of Conduct">open for everyone</a> &lt;3
       </p>
     </div>
     <footer>
@@ -151,6 +162,7 @@
     </footer>
     <!-- build:js /scripts/script.js -->
     <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/bootstrap/js/collapse.js"></script>
     <script src="/scripts/extern.js"></script>
     <script src="/scripts/main.js"></script>
     <!-- endbuild -->

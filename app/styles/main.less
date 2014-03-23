@@ -2,6 +2,8 @@
 @import 'bootstrap/bootstrap';
 @import 'fontawesome/fontawesome';
 
+@font-size-base: 16px;
+
 @webkit: true;
 @w3c: true;
 @moz: true;
@@ -15,18 +17,20 @@
 }
 
 @import 'header';
+@import 'screens';
 
 .content {
   margin-top: 60px;
   margin-bottom: 20px;
-}
-
-.necessity {
-  margin-bottom: 40px;
-}
-
-.tools {
-  margin-top: 120px;
+  > div {
+    margin-bottom: 20px;
+  }
+  h3 {
+    display: block;
+  }
+  li {
+    margin-left: 20px;
+  }
 }
 
 .giants {
@@ -62,7 +66,6 @@
   margin-top: 80px;
 }
 
-@import "devices";
 
 #emaillist {
   margin-top: 80px;

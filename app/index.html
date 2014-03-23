@@ -60,12 +60,8 @@
     <header>
       <div id="banner"></div>
       <div class="container">
-        <h1 class="col-md-10 col-md-offset-1">Bradypodion.js</h1>
-        <h2 class="lead col-md-10 col-md-offset-1">The next generation mobile web app framework</h2>
-        <!-- <div class="col-md-6 col-md-offset-3">
-          <div class="btn btn-lg btn-primary col-md-6">GitHub</div>
-          <div class="btn btn-lg btn-primary col-md-6">Documentation</div>
-        </div> -->
+        <h1 class="col-md-10 col-md-offset-1">Brady<wbr>podion.js</h1>
+        <h2 class="lead col-md-10 col-md-offset-1">The mobile web app framework with a vision</h2>
         <div class="col-md-4 col-md-offset-4">
           <iframe src="http://ghbtns.com/github-btn.html?user=excellenteasy&repo=bradypodion&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
           <iframe src="http://ghbtns.com/github-btn.html?user=excellenteasy&repo=bradypodion&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
@@ -74,36 +70,38 @@
     </header>
     <div class="content container">
       <div id="postplatform" class="row">
-        <h3 class="necessity h2 col-md-10 col-md-offset-1 text-center">
-          Born out of necessity – tested in the field.
+        <h3 class="col-md-6 col-md-offset-3 text-center">
+          The post-platform vision
         </h3>
-        <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
-          <h4 class="h3">UX first</h4>
-          <p>We want developers to use web technologies but we can't expect them to sacrifice a good part of their app’s user experience. That’s why we don’t take the smallest common denominator, but rather optimize for each platform until it matches native behavior. You can't ship iOS UI to Android, or waive accesibility. That's why we abstracted such things.</p>
-        </div>
-        <div class="col-md-5 col-sm-5">
-          <h4 class="h3">Post platform</h4>
-          <p>Instead of one-size-fits-all we appreciate the unique nature of each platform – and your users will, too. Android evangelists have other expectations from your app than iOS lovers. Hence, every component looks and behaves differently depending on the platform, without a single line of extra code needed.</p>
-        </div>
+        <div id="stores" class="screenshot"></div>
+        <p class="col-md-6 col-md-offset-3">
+          Doesn't seem like these app's only difference is that on Android the header is left aligned, while on iOS it's centered, does it?
+          There is much more thought to be put in post-platform than just dynamically adding a few CSS classes here and there.
+        </p>
+        <p class="col-md-6 col-md-offset-3">
+          Most Frameworks out there claim to be cross-platform. What that means is, they take technical differences of the platforms into consideration and ship something, that somehow works, to each of them.
+          That working <em>thing</em> isn't necessarily the most beautiful or even usable at all, because platforms are not only differentiated by their browsers capabilities, but by fundamental user interface concepts.
+          Ignoring this simple fact made cross-platform a synonym for bad user experience – and that's why we had to come up with a new term <strong>post-platform</strong>.
+        </p>
       </div>
-      <div class="row">
-        <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
-          <h4 class="h3">Solving real-world problems</h4>
-          <p>It’s of no use if a framework is fast on paper. In reality you will have radically different circumstances than in the test lab. Every components of bradypodion was born out of necessity and immediately tested in real apps. No fancy charts, just everyday proof.</p>
-        </div>
-        <div class="col-md-5 col-sm-5">
-          <h4 class="h3">Standing on the shoulders of giants</h4>
-          <p>We only fix what’s broken, but we fix it well. Bradypodion depends on Angular and is built using grunt. No need to create the next DOM selector library. We do have an opinion on how a tap directive should work though. We specialize in the mobile optimization – only.</p>
-        </div>
-      </div>
-      <div class="row">
-        <h3 class="tools h2 col-md-10 col-md-offset-1 text-center">
-          We exclusively work with tools that share the same values
-          <br>
-          Modularity – Testing – Openness
+      <div id="giants" class="row">
+        <h3 class="col-md-6 col-md-offset-3 text-center">
+          On the shoulders of giants
         </h3>
+        <p class="col-md-6 col-md-offset-3">
+          Bradypodion doesn't reinvent the wheel. Much rather it connects and applies existing tools and community conventions intelligently on a high-level. You'll have a strong and trusted foundation you can build amazing apps with – in no time.
+        </p>
+        <ul class="col-md-6 col-md-offset-3">
+          <li>We use AngularJS + jQuery as our MVC framework</li>
+          <li>We have optional modules for scroll with iScroll</li>
+          <li>We use LESS and Lesshat to write modern and prefix-free CSS</li>
+          <li>We use grunt.js to build and develop the framework</li>
+          <li>We use GitHub and Travis to share and test (100% coverage) our code</li>
+          <li>We use Bower to distribute our builds</li>
+        </ul>
       </div>
     </div>
+
     <div class="giants">
       <div class="wrapper clearfix">
         <a href="http://angularjs.org" title="angular homepage">
@@ -125,8 +123,65 @@
           <img src="/images/giants/travis.png" alt="travis's logo" width="150" height="150"/>
         </a>
       </div>
+      </div>
     </div>
-    <div id="devices"></div>
+
+    <div class="content container">
+      <div id="css" class="row">
+        <h3 class="col-md-6 col-md-offset-3 text-center">
+          Modular CSS Architecture
+        </h3>
+        <p class="col-md-6 col-md-offset-3">
+          CSS preprocessors, mixins, variables and stuff, nothing new here, right?
+          Turns out the more CSS you put in the mobile browser, the fancier you design your selectors, the slower your apps gets. That's why we focus 100% on the output and therefore performance of our CSS. We don't have a cool and colorfull demo page where you can see 8 pre-built themes, but we have the right tools so you can easily build exactly the CSS modules and themes you need – and nothing more.
+        </p>
+      </div>
+
+      <div id="defaults" class="row">
+        <h3 class="col-md-6 col-md-offset-3 text-center">
+          Intelligent defaults &amp; conventions
+        </h3>
+        <p class="col-md-6 col-md-offset-3">
+          We strongly believe that a framework should offer defaults to the developer. This means Bradypodion takes the context of the current operation and tries to do the right thing – out of the box. This way, following our conventions, most of the work will be done for you. The only thing you have left is focusing on the parts that make your app truly unique.
+        </p>
+      </div>
+
+      <div id="a11y" class="row">
+        <h3 class="col-md-6 col-md-offset-3 text-center">
+          Accessibility built in
+        </h3>
+        <p class="col-md-6 col-md-offset-3">
+          Even though we think configurability and modularity are good things
+          accessibility is one of the features you won't we able to disable. It's built right into the core of every component. Being a <em>web</em> framework does not only mean using HTML, CSS &amp; JS – it means making your content accessible for everyone.
+          The way AngularJS works we're touching HTML elements anyways, so ARIA attributes you wouldn't care about (sorry) are automatically applied – without an extra thought, or cluttered templates.
+        </p>
+      </div>
+
+      <div id="another" class="row">
+        <h3 class="col-md-6 col-md-offset-3 text-center">
+          Yet another mobile framework?
+        </h3>
+        <p class="col-md-6 col-md-offset-3">
+          Bradypodion is something we wished had existed back in 2010, when we started working on mobile web applications.
+          Over the years it became pretty clear that nothing out there will meet our requirements – maybe ever.
+          So this is nothing we wanted to create, or even maintain, but it's born out of necessity.
+        </p>
+      </div>
+
+      <div id="hardproblems" class="row">
+        <h3 class="col-md-6 col-md-offset-3 text-center">
+          Hard problems first
+        </h3>
+        <p class="col-md-6 col-md-offset-3">
+          Bradypodion is built by a team of two, so we focused on the hard problems first. This has two implications.
+        </p>
+        <ul class="col-md-6 col-md-offset-3">
+          <li>There might be frameworks out there, with more features already.</li>
+          <li>We have a very strong visionary foundation that outlines a much more mature and feature rich toolbelt. Building more modules is just a matter of time – and your contributions. Bradypodion is currently in an unstable pre 1.0 phase, but we would love to finally take you, the web-community, on board to make post-platform a reality.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="devices" class="screenshot"></div>
     <div class="container text-center">
       <p class="col-md-8 col-md-offset-2 space">
         Read more on our blog
